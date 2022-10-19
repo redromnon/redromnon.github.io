@@ -2,8 +2,8 @@
 
 :root {
     --font: 'Roboto Mono', monospace;
-    --background: white;
-    --color: #232333;
+    --background: #202124;
+    --color: white;
 }
 
 body{
@@ -78,7 +78,7 @@ footer{
     padding: 17px;
     font-size: 1rem;
     font-weight: 500;
-    border-radius: 5px;
+    border-radius: 10px;
     border: dashed var(--color) 2px;
     text-align: center;
     text-decoration: none;  
@@ -87,12 +87,9 @@ footer{
 
 }
 
+.link:hover{
 
-
-@media (prefers-color-scheme: dark) {
-
-    :root {        
-        --background: #202124;
-        --color: white;
-    }
-  }
+    color: var(--background);
+    background-color: var(--color);
+    transition: 0.2s;
+}
