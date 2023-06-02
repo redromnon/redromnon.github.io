@@ -51,7 +51,7 @@ footer{
     display: block;
     margin: 35px auto 20px;
     border-radius: 50%;
-    border: solid var(--color) 2px;
+    border: solid 2px var(--color);
 }
 
 #userName{
@@ -60,7 +60,7 @@ footer{
     font-weight: 400;
     text-align: center;
     text-decoration: none;
-    line-height: 1.25;
+    line-height: 0;
     display: block;
     color: var(--color);
 }
@@ -70,6 +70,12 @@ footer{
     width: auto;
     display: block;
     margin: 27px auto;
+    animation: showlinks 2s;
+}
+
+@keyframes showlinks{
+    0% {opacity: 0;}
+    100% {opacity: 100;}
 }
 
 .link{
@@ -88,7 +94,6 @@ footer{
 }
 
 .link:hover{
-
     color: var(--background);
     background-color: var(--color);
     transition: 0.2s;
